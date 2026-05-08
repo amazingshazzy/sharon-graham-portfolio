@@ -25,11 +25,11 @@ const skillSections = [
     title: "AI Design",
     text: "Concept design, generative workflows, intelligent interfaces, and portfolio storytelling.",
     tools: [
-      { name: "Midjourney", img: "/tools/midjourney.png" },
-      { name: "ChatGPT", img: "/tools/chatgpt.png" },
-      { name: "Claude", img: "/tools/claude.png" },
-      { name: "Gemini", img: "/tools/gemini.png" },
-      { name: "Google AI Studio", img: "/tools/google-ai-studio.png" },
+      { name: "Midjourney", img: "/tools/midjourney.webp" },
+      { name: "ChatGPT", img: "/tools/chatgpt.webp" },
+      { name: "Claude", img: "/tools/claude.webp" },
+      { name: "Gemini", img: "/tools/gemini.webp" },
+      { name: "Google AI Studio", img: "/tools/google-ai-studio.webp" },
     ],
   },
   {
@@ -37,9 +37,9 @@ const skillSections = [
     title: "3D Experiences",
     text: "Virtual try-on concepts, product visualisation, cinematic mockups, and immersive scenes.",
     tools: [
-      { name: "Three.js", img: "/tools/threejs.png" },
-      { name: "Blender", img: "/tools/blender.png" },
-      { name: "Cinema 4D", img: "/tools/cinema4d.png" },
+      { name: "Three.js", img: "/tools/threejs.webp" },
+      { name: "Blender", img: "/tools/blender.webp" },
+      { name: "Cinema 4D", img: "/tools/cinema4d.webp" },
     ],
   },
   {
@@ -47,10 +47,10 @@ const skillSections = [
     title: "Web Portfolio",
     text: "Responsive self-hosted websites with motion, video intros, and professional case studies.",
     tools: [
-      { name: "Figma", img: "/tools/figma.png" },
-      { name: "Canva", img: "/tools/canva.png" },
-      { name: "Vite", img: "/tools/vite.png" },
-      { name: "React", img: "/tools/react.png" },
+      { name: "Figma", img: "/tools/figma.webp" },
+      { name: "Canva", img: "/tools/canva.webp" },
+      { name: "Vite", img: "/tools/vite.webp" },
+      { name: "React", img: "/tools/react.webp" },
     ],
   },
 ];
@@ -92,39 +92,39 @@ const projects = [
   {
     title: "AI Virtual Try-On",
     category: "3D Fashion / AI Experience",
-    image: img("3d_virtualTryon_6.jpeg"),
+    image: img("3d_virtualTryon_6.webp"),
      images: [
-  img("3d_virtualTryon_1.jpeg"),          // 0
-  img("3d_virtualTryon_2.jpeg"),          // 1
-  img("3d_virtualTryon_3.jpeg"),          // 2
-  img("3d_virtualTryon_4.jpeg"),          // 3
-  img("3d_virtualTryon_5.jpeg"),          // 4
-  img("3d_virtualTryon_6.jpeg"),          // 5
-  img("3d_virtualTryon_7.jpeg"),          // 6
-  img("3d_virtualTryon_8.jpeg"),          // 7
-  img("3d_virtualTryon_9.jpeg"),          // 8
-  img("3d_virtualTryon_10.jpeg"),         // 9
-  img("3d_virtualTryon_Architecture.jpeg") // 10
+  img("3d_virtualTryon_1.webp"),          // 0
+  img("3d_virtualTryon_2.webp"),          // 1
+  img("3d_virtualTryon_3.webp"),          // 2
+  img("3d_virtualTryon_4.webp"),          // 3
+  img("3d_virtualTryon_5.webp"),          // 4
+  img("3d_virtualTryon_6.webp"),          // 5
+  img("3d_virtualTryon_7.webp"),          // 6
+  img("3d_virtualTryon_8.webp"),          // 7
+  img("3d_virtualTryon_9.webp"),          // 8
+  img("3d_virtualTryon_10.webp"),         // 9
+  img("3d_virtualTryon_Architecture.webp") // 10
 ],
   },
   {
     title: "KIT2.6",
     label: "AI Agentic Use Case B",
     category: "Intelligent Luxury Vehicle AI Companion",
-    image: img("KIT26_hero_main.jpg"),
+    image: img("KIT26_hero_main.webp"),
    images: [
-  img("KIT26_hero_main.jpg"),          // 0
-  img("KIT26_ai-ui_1.jpg"),            // 1
-  img("KIT26_ai-ui_Car_1.jpg"),        // 2
-  img("KIT26_ai-ui_car_2.jpg"),        // 3
-  img("KIT26_ai-ui_Mobile_1.jpg"),     // 4
-  img("KIT26_ai-ui_Mobile_2.jpg"),     // 5
-  img("KIT26_ai-ui_Mobile_4.jpg"),     // 6
-  img("KIT26_ai-ui_Mobile_5.jpg"),     // 7
-  img("KIT26_ai-ui_car_3.jpg"),        // 8
-  img("KIT26_Architecture_car_1.jpg"), // 9
-  img("KIT26_dashboard.jpg"),          // 10
-  img("KIT26_architecture.jpg"),       // 11
+  img("KIT26_hero_main.webp"),          // 0
+  img("KIT26_ai-ui_1.webp"),            // 1
+  img("KIT26_ai-ui_Car_1.webp"),        // 2
+  img("KIT26_ai-ui_car_2.webp"),        // 3
+  img("KIT26_ai-ui_Mobile_1.webp"),     // 4
+  img("KIT26_ai-ui_Mobile_2.webp"),     // 5
+  img("KIT26_ai-ui_Mobile_4.webp"),     // 6
+  img("KIT26_ai-ui_Mobile_5.webp"),     // 7
+  img("KIT26_ai-ui_car_3.webp"),        // 8
+  img("KIT26_Architecture_car_1.webp"), // 9
+  img("KIT26_dashboard.webp"),          // 10
+  img("KIT26_architecture.webp"),       // 11
 ],
     featured: true,
     description:
@@ -134,16 +134,16 @@ const projects = [
     title: "Arion Bank",
     label: "AI Agentic Use Case C",
     category: "AI Banking / KYC / Crypto Wealth",
-    image: img("Arion_Bank_KYC_main.jpg"),
+    image: img("Arion_Bank_KYC_main.webp"),
     images: [
-      img("Arion_Bank_KYC_main.jpg"),
-      img("Arion_Bank_KYC_1.jpg"),
-      img("Arion_Bank_KYC_2.jpg"),
-      img("Arion_Bank_KYC_3.jpg"),
-      img("Arion_Bank_KYC_4.jpg"),
-      img("Arion_Bank_KYC_5.jpg"),
-      img("Arion_Bank_KYC_6.jpg"),
-      img("Arion_Bank_KYC_Architecture_8.jpg"),
+      img("Arion_Bank_KYC_main.webp"),
+      img("Arion_Bank_KYC_1.webp"),
+      img("Arion_Bank_KYC_2.webp"),
+      img("Arion_Bank_KYC_3.webp"),
+      img("Arion_Bank_KYC_4.webp"),
+      img("Arion_Bank_KYC_5.webp"),
+      img("Arion_Bank_KYC_6.webp"),
+      img("Arion_Bank_KYC_Architecture_8.webp"),
     ],
     featured: true,
     description:
