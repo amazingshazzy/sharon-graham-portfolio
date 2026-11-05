@@ -1,16 +1,296 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+/* =====================================================
+   SHARON GRAHAM — AI INNOVATION DESIGN PORTFOLIO
+   Premium Typography | Global Styles | Components
+   ===================================================== */
+
+/* =====================================================
+   GOOGLE FONTS
+   DM Sans       — Main typography
+   Pinyon Script — Luxury signature
+   Great Vibes   — Decorative capital S
+   Ballet        — Optional artistic calligraphy
+   ===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Pinyon+Script&family=Ballet&family=Great+Vibes&display=swap");
+
 @import "tailwindcss";
-/* then everything else */
-body {
-  font-family: "Great Vibes", sans-serif;
+
+/* =====================================================
+   1. DESIGN TOKENS & TYPOGRAPHY
+   ===================================================== */
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "DM Sans", sans-serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-artistic: "Ballet", cursive;
+
+  --color-signature: #f4512a;
+  --color-ivory: #f7f4ef;
+  --color-ink: #202124;
 }
+
+
+/* =====================================================
+   2. GLOBAL STYLES
+   ===================================================== */
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   3. HEADINGS — PREMIUM EDITORIAL STYLE
+   ===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   4. SIGNATURE CALLIGRAPHY & PERSONAL BRANDING
+   ===================================================== */
+
+/* 4.1 — Default decorative fonts */
+
+.font-script,
+.font-decorative {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+}
+
+.font-artistic,
+.signature-ballet {
+  font-family: "Ballet", cursive;
+  font-weight: 400;
+}
+
+
+/* 4.2 — Main Sharon.G signature */
+
+.brand-signature {
+  display: inline-block;
+
+  font-family: "Pinyon Script", cursive;
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-weight: 400;
+
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+
+  color: #f4512a;
+
+  /* Solid orange lettering */
+  background: none;
+  background-image: none;
+
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+
+  -webkit-text-fill-color: #f4512a;
+  -webkit-text-stroke: 0.4px #f4512a;
+
+  /* Layout */
+  max-width: 100%;
+  white-space: nowrap;
+
+  padding: 0.12em 0.15em 0.08em;
+  margin: 0;
+}
+
+
+/* 4.3 — Decorative capital S */
+
+.signature-initial,
+.signature-s {
+  display: inline-block;
+
+  font-family: "Great Vibes", cursive;
+  font-size: 1.02em;
+  font-weight: 400;
+
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+
+  color: #f4512a;
+
+  -webkit-text-fill-color: #f4512a;
+  -webkit-text-stroke: 0.45px #f4512a;
+
+  vertical-align: baseline;
+  margin-right: -0.08em;
+}
+
+
+/* 4.4 — Decorative capital G */
+
+.signature-g {
+  display: inline-block;
+
+  font-family: "Pinyon Script", cursive;
+  font-size: 1em;
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  color: #f4512a;
+
+  -webkit-text-fill-color: #f4512a;
+  -webkit-text-stroke: 0.5px #f4512a;
+
+  vertical-align: baseline;
+  margin-left: -0.04em;
+}
+
+
+/* 4.5 — Professional brand subtitle */
+
+.brand-subtitle {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(10px, 1vw, 13px);
+  font-weight: 500;
+
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #52525b;
+
+  white-space: normal;
+  overflow-wrap: normal;
+
+  margin-top: -0.35rem;
+}
+
+
+/* 4.6 — Mobile signature adjustments */
+
+@media (max-width: 640px) {
+
+  .brand-signature {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+    letter-spacing: -0.04em;
+  }
+
+  .signature-initial,
+  .signature-s {
+    font-size: 1em;
+    margin-right: -0.06em;
+  }
+
+  .signature-g {
+    font-size: 1em;
+  }
+
+  .brand-subtitle {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+}
+
+
+/* =====================================================
+   5. NAVIGATION
+   ===================================================== */
+
+nav {
+  font-family: "DM Sans", sans-serif;
+}
+
+nav a {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+
+/* =====================================================
+   6. BUTTON TYPOGRAPHY
+   ===================================================== */
+
+button,
+input,
+textarea,
+select {
+  font-family: "DM Sans", sans-serif;
+}
+
+button {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+
+/* =====================================================
+   7. SPACING
+   ===================================================== */
 
 .spaced {
   margin-bottom: 20px;
-}.cv-button {
+}
+
+
+/* =====================================================
+   8. CV BUTTON
+   ===================================================== */
+
+.cv-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
+  z-index: 10;
 
   padding: 14px 28px;
 
@@ -20,51 +300,103 @@ body {
   border-radius: 9999px;
   border: 3px solid #4da3ff;
 
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.02em; /* fixes cramped look */
+  letter-spacing: 0.02em;
 
   text-decoration: none;
 
   transition: all 0.3s ease;
 }
 
-.cv-button {
-  position: relative;
-  z-index: 10;
-}
 .cv-button:hover {
   background-color: #111;
   border-color: #7ab8ff;
   transform: translateY(-2px);
 }
+
+
+/* =====================================================
+/* =====================================================
+   9. TIMELINE — SOFT OPACITY
+   ===================================================== */
+
 .timeline {
   position: relative;
 }
 
+/* 9.1 — Vertical timeline lines */
+
 .line-top,
 .line-bottom {
-   z-index: -10;
   position: absolute;
+
+  z-index: 0;
+
   left: 50%;
-  width: 1px;
-  background: #d8d0c7;
+  width: 2px;
+
+  background: rgba(160, 155, 150, 0.18);
+
   transform: translateX(-50%);
+
+  pointer-events: none;
 }
 
-/* top segment */
+/* 9.2 — Top segment */
+
 .line-top {
   top: 0;
   height: 40%;
 }
 
-/* bottom segment */
+/* 9.3 — Bottom segment */
+
 .line-bottom {
   bottom: 0;
   height: 40%;
 }
 
+/* 9.4 — Timeline circles above the line */
+
 .story-circle,
 .tree-circle {
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 2;
+}
+
+/* =====================================================
+   10. STORY & TREE CIRCLES
+   ===================================================== */
+
+.story-circle,
+.tree-circle {
+  box-shadow: 0 20px 40px rgba(113, 86, 86, 0.08);
+}
+
+
+/* =====================================================
+   11. ACCESSIBILITY
+   ===================================================== */
+
+:focus-visible {
+  outline: 2px solid #4da3ff;
+  outline-offset: 3px;
+}
+
+
+/* =====================================================
+   12. REDUCED MOTION SUPPORT
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .cv-button {
+    transition: none;
+  }
 }
